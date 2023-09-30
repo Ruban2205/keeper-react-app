@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Quicksand&display=swap');
+
 /* Global Variable */
 * {
   padding: 0;
@@ -5,8 +7,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #ff3838 !important;
+  --dark: #343a40 !important;
+
+  --txt: 'Quicksand', sans-serif;
+  --logo: 'Pacifico', sans-serif;
+}
+
 html {
-  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
@@ -17,15 +26,15 @@ body {
 
 /* Header Section Starts */
 header {
-  background-color: #f5ba13;
+  background-color: var(--primary);
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  font-family: var(--logo);
 }
 
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
   font-weight: 200;
 }
 
@@ -36,10 +45,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-}
-
-footer p {
-  color: #ccc;
+  font-family: var(--txt);
+  color: var(--dark);
 }
 
 /* Note Section Starts */
@@ -69,7 +76,7 @@ footer p {
   position: relative;
   float: right;
   margin-right: 20px;
-  color: #f5ba13;
+  color: var(--primary);
   border: none;
   width: 36px;
   height: 36px;
@@ -96,7 +103,7 @@ form textarea {
   padding: 4px;
   outline: none;
   font-size: 1.2em;
-  font-family: inherit;
+  font-family: var(--txt);
   resize: none;
 }
 
@@ -104,9 +111,10 @@ form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #f5ba13;
+  background: var(--primary);
   color: #fff;
   border: none;
+  font-family: var(--txt);
   border-radius: 50%;
   width: 36px;
   height: 36px;
