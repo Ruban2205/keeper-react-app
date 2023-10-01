@@ -9,7 +9,7 @@ function Footer() {
 
     return (
         <footer className="footer">
-            <p>Copyright © {currentYear} | All rights reserved</p>
+            <p>Copyright © {currentYear} | All rights reserved | www.rubangino.in</p>
         </footer>
     );
 }
